@@ -1,0 +1,26 @@
+{
+    "name": "joacub/zf-charts",
+    "description": "Aplicacion para generar facilmente estadisticas",
+    "type": "library",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "https://github.com/joacub/zf-charts",
+    "authors": [
+        {
+            "name": "Johan",
+            "email": "joacub@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+    },
+    "autoload": {
+        "psr-0": {
+            "ZfCharts": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
