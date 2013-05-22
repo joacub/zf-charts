@@ -26,5 +26,23 @@ class Module
             ),
         );
     }
+    
+    public function getServiceConfig($e = null)
+    {
+    	return array(
+    		'factories' => array(
+    			'zfChart' => 'ZfChart\Chart\Factory'
+    		),
+    	);
+    }
+    
+    public function getViewHelperConfig()
+    {
+    	return array(
+    		'invokables' => array(
+    			'displayZfChart' => 'ZfChart\View\Helper\DisplayZfChart',
+    		)
+    	);
+    }
 
 }
